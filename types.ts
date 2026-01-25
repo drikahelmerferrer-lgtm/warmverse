@@ -1,24 +1,33 @@
 
-export enum OrderStatus {
-  PENDING = 'PENDING',
-  IN_PROGRESS = 'IN_PROGRESS',
-  ADJUSTING = 'ADJUSTING',
-  COMPLETED = 'COMPLETED'
-}
-
-export interface SongOrder {
-  id: string;
-  theme: string;
-  occasion: string;
-  style: string;
-  names: string;
-  feelings: string;
-  status: OrderStatus;
-  createdAt: string;
-  audioUrl?: string;
-}
+export type OrderStatus = 'pendente' | 'em andamento' | 'pronto';
 
 export interface User {
+  id: string;
   name: string;
+  instagram: string;
   whatsapp: string;
+  isAdmin?: boolean;
 }
+
+export interface Occasion {
+  id: string;
+  label: string;
+  price: number;
+}
+
+export interface Order {
+  id: string;
+  userId: string;
+  userName: string;
+  theme: string;
+  occasionId: string;
+  occasionLabel: string;
+  price: number;
+  rhythm: string;
+  story: string;
+  mentions?: string;
+  status: OrderStatus;
+  createdAt: number;
+}
+
+export type Screen = 'Login' | 'Dashboard' | 'NewMusic' | 'Admin';

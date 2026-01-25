@@ -1,7 +1,5 @@
 {
-  "name": "Warmverse - Transformando Histórias em Música",
-  "description": "Aplicativo para criação de músicas 100% personalizadas com IA e acompanhamento humano, focado em emoção, profissionalismo e exclusividade.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
+  "name": "Warmverse - Personalized Music",
+  "description": "A premium platform for requesting personalized songs for special occasions, featuring client management and an administrative dashboard.",
+  "requestFramePermissions": []
 }
